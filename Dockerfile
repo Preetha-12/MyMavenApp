@@ -9,7 +9,7 @@ WORKDIR /usr/local/tomcat/webapps
 COPY target/MyMavenApp-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/MyMavenApp.war
 
 # Expose the port Tomcat will run on (by default, Tomcat runs on 8080)
-EXPOSE 8080
+EXPOSE 8000
 
 # Start Tomcat server
 CMD ["catalina.sh", "run"]
